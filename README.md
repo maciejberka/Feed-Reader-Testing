@@ -47,7 +47,7 @@ This project is licensed under the MIT License.
 * Udacity - for great course and help
 * Google - for the scholarship
 * Mentor - for sharing your knowledge
-* Reviewer - for a lot of suggestions
+* Reviewers - for a lot of suggestions
 
 
 
