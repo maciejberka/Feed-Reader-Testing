@@ -78,20 +78,21 @@ $(function() {
         var secondHeader; 
 
         //loadFeed is asynchronous, so wait until its complete its work...
-        beforeEach(function(done){
-          loadFeed(0, function(){
-            //...and take first header of first feed to variable  
+        beforeEach(function (done) {
+          //Load first feed
+          loadFeed(0, function () {
+            //and get first header to the variable
             firstHeader = document.querySelector('.feed h2').innerHTML;
-          });
-
-          //Wait until loadFeed load second feed...
-          loadFeed(1, function() {
-            //...and take first header of second feed to variable 
-            secondHeader = document.querySelector('.feed h2').innerHTML;
             
-            done();
+            //Load second feed
+            loadFeed(1, function () {
+              //and get first header to the variable
+              secondHeader = document.querySelector('.feed h2').innerHTML;
+              done();
+            });
+            
           });
- 
+          
         });
 
         //Is content changing when a new feed is loaded?
